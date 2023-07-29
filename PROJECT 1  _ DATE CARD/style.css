@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  /**/
+  padding: 0;
+  /**/
+  box-sizing: inherit;
+  /**/
+}
+
+html {
+  /* root font size */
+  /* font-size: 10px; */
+  /* This defines what 1 rem should be */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  /*padding: 30px;*/
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-pricing {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(10rem, 1fr));
+  grid-template-columns: repeat(6, minmax(10rem, 1fr));
+}
+
+.item {
+  /* color: rgb(0, 17, 75); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 6px;
+  text-align: center;
+  /* width: 60rem; */
+  /* background-color: rgb(73, 57, 27); */
+}
+
+.item--1 {
+  background-color: #459b2f;
+}
+
+.item--2 {
+  background-color: #312f9b;
+}
+
+.item--3 {
+  background-color: #8e2f9b;
+}
+
+.item--4 {
+  background-color: #a50c4c;
+}
+
+.item--5 {
+  background-color: #f54712;
+  /* width: 100px; */
+}
+
+.item--6 {
+  background-color: rgba(173, 0, 168, 0.603);
+  /* width: 100px; */
+}
+
+.item--7 {
+  background-color: #5eaa16;
+}
+
+.item--8 {
+  background-color: springgreen;
+}
+
+.item--9 {
+  background-color: #00a2ff;
+}
+
+.item--10 {
+  background-color: #106d24;
+}
+
+.item--11 {
+  background-color: #6d5710;
+}
+
+.item--12 {
+  background-color: #008383;
+}
+
+.item--13 {
+  background-color: #c12918;
+}
+
+.item--14 {
+  background-color: #a23b00;
+}
+
+.item--15 {
+  background-color: #7c8900;
+}
+
+.item--16 {
+  background-color: #6d0810;
+}
+
+.listings {
+  color: black;
+}
+.listings__date {
+  background-color: red;
+  width: 100%;
+  text-align: center;
+}
+.listings__price {
+  position: relative;
+}
+.listings__price--symbol {
+  display: block;
+  content: "\20B9";
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+.listings__day {
+  background-color: #4040dd;
+}
+.listings__price {
+  background-color: #478947;
+}
+
+.date-as-calendar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 15rem;
+  height: 6rem;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Helvetica", "Arial", sans-serif;
+  /* margin: 1ex; */
+  color: black;
+  border: 1px solid #888;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.date-as-calendar .weekday,
+.date-as-calendar .day,
+.date-as-calendar .month,
+.date-as-calendar .year .date-as-calendar .listings__price {
+  text-align: center;
+  line-height: 2;
+}
+
+.date {
+  border-bottom: 3px solid red;
+  background-color: #f62929;
+}
